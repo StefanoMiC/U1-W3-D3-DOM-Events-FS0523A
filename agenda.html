@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & DOM</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Forms e DOM Events</h1>
+        <form id="myForm">
+            <div>
+                <label for="name">Nome</label>
+                <input id="name" type="text" placeholder="Inserisci il nome" required>
+            </div>
+            <div>
+                <label for="surname">Cognome</label>
+                <input id="surname" type="text" placeholder="Inserisci il cognome" required>
+            </div>
+            <div>
+                <label for="city">Città</label>
+                <input id="city" type="text" placeholder="Inserisci la città" required>
+            </div>
+            <div>
+                <label for="phone">Telefono</label>
+                <input id="phone" type="number" placeholder="+393xxxxx" required>
+            </div>
+            <div id="buttonArea">
+                <button type="submit">Salva contatto</button>
+                <!-- HARD RESET
+                    <button type="reset">Cancella</button>  
+                -->
+
+                <!-- il type button rende il bottone agnostico rispetto al form, non farà scatenare l'onsubmit del form
+                possiamo quindi andare a creare funzionaltià custom -->
+                <button type="button">Cancella</button>
+            </div>
+        </form>
+        <!-- qui verranno generate delle card all'invio del form -->
+        <!-- 
+        <div class="card">
+            <h4>Nome e Cognome</h4>
+            <h5>Città</h5>
+            <p>03882192231</p>
+            <button>Cancellami</button>
+        </div>
+        -->
+
+    </main>
+
+    <script src="./js/agenda.js"></script>
+</body>
+
+</html>

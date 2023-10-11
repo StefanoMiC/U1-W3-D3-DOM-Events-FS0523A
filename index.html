@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>lorem ipsum</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque cupiditate aspernatur dignissimos a, maiores
+        quas, ea quod temporibus nemo, illum aut magnam eveniet? Eum perferendis libero minus vel odio ipsam.</p>
+    <div id="table-container"></div>
+    <!-- l'attributo onclick si aspetta una sintassi che NON E' JavaScript propriamente, è una semplice stringa che rapprensenta l'operazione da svolgere 
+            nomeFunzione()  <-- !!!attenzione!!! mettere le parentesi qui è necessario, ma farlo in un foglio JS creerebbe un problema!
+            se vogliamo ricevere un evento nella funzione dovremo necessariamente scrivere event dentro le parentesi tonde
+            nomeFunzione(event) <-- deve essere PROPRIO event!
+        -->
+    <button onclick="btnClicked(event)">Click me</button>
+
+    <!-- evento con addEventListener() agganciato alla referenza di btn2 che abbiamo preso dal foglio js -->
+    <button id="btn2">Click me2</button>
+    <!-- evento tramite assegnazione di proprietà onclick applicata alla referenza di btn3 che abbiamo preso dal foglio js -->
+    <button id="btn3">Click me3</button>
+    <button id="btn4">Crea tabella</button>
+    <script src="./js/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+form {
+  margin-bottom: 3rem;
+}
+
+form > div {
+  margin-top: 0.5rem;
+  width: max-content;
+  margin-inline: auto;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  min-width: 400px;
+}
+
+#buttonArea {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  width: 25%;
+  background-color: #9dc8f5;
+  margin-inline: -2.8px;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.card button {
+  background-color: white;
+  border: none;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  margin-top: 0.75rem;
+  cursor: pointer;
+}

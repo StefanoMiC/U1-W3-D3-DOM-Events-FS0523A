@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & DOM</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form>div {
+            margin-top: .5rem;
+            width: max-content;
+            margin-inline: auto;
+        }
+
+        form label {
+            display: block;
+        }
+
+        form input,
+        form textarea {
+            min-width: 400px;
+        }
+
+        #buttonArea {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Forms e DOM Events</h1>
+        <form id="myForm">
+            <div>
+                <label for="name">Nome</label>
+                <input id="name" type="text" placeholder="Inserisci il tuo nome" required>
+            </div>
+            <div>
+                <label for="age">Età</label>
+                <input id="age" type="number" min="0" max="99" required>
+            </div>
+            <div>
+                <label for="city">Città</label>
+                <input id="city" type="text" min="3" max="30" placeholder="Inserisci la tua città" required>
+            </div>
+            <div>
+                <label for="note">Note</label>
+                <textarea id="note" rows="5" placeholder="Inserisci eventuali note"></textarea>
+            </div>
+            <div id="buttonArea">
+                <button type="submit">Invia</button>
+                <!-- HARD RESET
+                    <button type="reset">Cancella</button>  
+                -->
+
+                <!-- il type button rende il bottone agnostico rispetto al form, non farà scatenare l'onsubmit del form
+                possiamo quindi andare a creare funzionaltià custom -->
+                <button type="button">Cancella</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
